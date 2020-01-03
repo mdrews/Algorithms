@@ -5,10 +5,10 @@ import ColumnChart from './ColumnChart';
 
 const data = [
   ["Element", "Density", { role: "style" }],
-  ["Copper", 8.94, "#b87333"], // RGB value
-  ["Silver", 10.49, "silver"], // English color name
-  ["Gold", 19.3, "gold"],
-  ["Platinum", 21.45, "color: #e5e4e2"] // CSS-style declaration
+  ["1", 1, "#blue"], // RGB value
+  ["2", 2, "blue"], // English color name
+  ["3", 3, "blue"],
+  ["4", 4, "blue"] // CSS-style declaration
 ]
 
 function App() {
