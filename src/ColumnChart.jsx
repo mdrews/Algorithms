@@ -2,6 +2,7 @@ import React from 'react';
 import Chart from 'react-google-charts';
 
 const options={
+  bar: { groupWidth: "100%"},
   height: 200,
   legend: { position: 'none' },
   width: 800,

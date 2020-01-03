@@ -4,12 +4,19 @@ import './App.css';
 import ColumnChart from './ColumnChart';
 
 const data = [
-  ["Element", "Density", { role: "style" }],
-  ["1", 1, "#blue"], // RGB value
-  ["2", 2, "blue"], // English color name
-  ["3", 3, "blue"],
-  ["4", 4, "blue"] // CSS-style declaration
-]
+  // ["Element", "Density", { role: "style" }],
+  // ["1", 1, "#blue"], // RGB value
+  // ["2", 2, "blue"], // English color name
+  // ["3", 3, "blue"],
+  // ["4", 4, "blue"] // CSS-style declaration
+];
+
+const COLUMNS = 80;
+for(let x = 0; x < COLUMNS; x++) {
+  data.push([x.toString(), x, "blue"]);
+}
+
+data.unshift(["Element", "Density", { role: "style" }]);
 
 function App() {
   return (
