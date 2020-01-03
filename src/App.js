@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ColumnChart from './ColumnChart';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
 
 const data = [
   // ["Element", "Density", { role: "style" }],
@@ -42,14 +44,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h2>Bubble Sort</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Button color="primary">Forward</Button>
         <ColumnChart data={data}/>
       </header>
     </div>
