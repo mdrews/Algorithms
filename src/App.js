@@ -4,6 +4,7 @@ import './App.css';
 import ColumnChart from './ColumnChart';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
+import BubbleSort from './BubbleSort';
 
 const data = [
   // ["Element", "Density", { role: "style" }],
@@ -18,8 +19,6 @@ for(let x = 0; x < COLUMNS; x++) {
   data.push([x.toString(), x, "blue"]);
 }
 
-
-
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -28,8 +27,6 @@ function shuffleArray(array) {
       array[j] = temp;
   }
 }
-
-
 
 shuffleArray(data);
 
@@ -43,9 +40,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h2>Bubble Sort</h2>
-        <Button color="primary">Forward</Button>
-        <ColumnChart data={data}/>
+        <BubbleSort />
       </header>
     </div>
   );
