@@ -22,10 +22,12 @@ shuffleArray(data);
 
 data.unshift(["Element", "Density", { role: "style" }]);
 
-export default function BubbleSort(props) {
+const BubbleSort = props => {
   return(<div>
     <h2>Bubble Sort</h2>
     <Button color="primary">Forward</Button>
     <ColumnChart data={data}/>
   </div>);
 }
+
+export default BubbleSort
