@@ -6,13 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 import BubbleSort from './BubbleSort';
 
-const data = [
-  // ["Element", "Density", { role: "style" }],
-  // ["1", 1, "#blue"], // RGB value
-  // ["2", 2, "blue"], // English color name
-  // ["3", 3, "blue"],
-  // ["4", 4, "blue"] // CSS-style declaration
-];
+const data = [];
 
 const COLUMNS = 80;
 for(let x = 0; x < COLUMNS; x++) {
